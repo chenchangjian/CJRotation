@@ -1,6 +1,8 @@
 # CJRotation
 数字大转盘,可以积分,有动画有声音,简单易用,使用方法ViewController中也有详细说明
- 使用方法: 1. 导入CJIntegralRotation文件夹进入你的工程,并包含头文件
+
+ 使用方法: 
+           1. 导入CJIntegralRotation文件夹进入你的工程,并包含头文件
  ```objc
  #import "CJRoationView.h"
  ```
@@ -14,4 +16,7 @@
  label.text = [NSString stringWithFormat:@"分数:%.f",score];
  }];
   ```
+效果如下
 
+
+![](http://r.photo.store.qq.com/psb?/V10YRIl50znCEn/W8*YTcKs8rLZIy.N5oqA44BGUOogn*HrWklQhNeW4*0!/r/dFsBAAAAAAAA)
