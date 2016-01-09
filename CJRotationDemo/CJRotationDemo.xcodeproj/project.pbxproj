@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		660D31DC1C40FFD700CE81A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 660D31DB1C40FFD700CE81A8 /* main.m */; };
+		660D31DF1C40FFD700CE81A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 660D31DE1C40FFD700CE81A8 /* AppDelegate.m */; };
+		660D31E21C40FFD700CE81A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660D31E11C40FFD700CE81A8 /* ViewController.m */; };
+		660D31E51C40FFD700CE81A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660D31E31C40FFD700CE81A8 /* Main.storyboard */; };
+		660D31E71C40FFD700CE81A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660D31E61C40FFD700CE81A8 /* Images.xcassets */; };
+		660D31EA1C40FFD700CE81A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660D31E81C40FFD700CE81A8 /* LaunchScreen.xib */; };
+		660D31F61C40FFD800CE81A8 /* CJRotationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 660D31F51C40FFD800CE81A8 /* CJRotationDemoTests.m */; };
+		66C03F961C41038E008B3A0E /* 按钮.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F861C41038E008B3A0E /* 按钮.wav */; };
+		66C03F971C41038E008B3A0E /* 得.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F871C41038E008B3A0E /* 得.wav */; };
+		66C03F981C41038E008B3A0E /* 扣.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F881C41038E008B3A0E /* 扣.wav */; };
+		66C03F991C41038E008B3A0E /* 零.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F891C41038E008B3A0E /* 零.wav */; };
+		66C03F9A1C41038E008B3A0E /* mmm.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F8B1C41038E008B3A0E /* mmm.png */; };
+		66C03F9B1C41038E008B3A0E /* 启动按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F8C1C41038E008B3A0E /* 启动按钮.png */; };
+		66C03F9C1C41038E008B3A0E /* 启动按钮按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F8D1C41038E008B3A0E /* 启动按钮按下.png */; };
+		66C03F9D1C41038E008B3A0E /* 转盘-69.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F8E1C41038E008B3A0E /* 转盘-69.png */; };
+		66C03F9E1C41038E008B3A0E /* 转盘-70.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F8F1C41038E008B3A0E /* 转盘-70.png */; };
+		66C03F9F1C41038E008B3A0E /* 转盘-71.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F901C41038E008B3A0E /* 转盘-71.png */; };
+		66C03FA01C41038E008B3A0E /* 转盘-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F911C41038E008B3A0E /* 转盘-72.png */; };
+		66C03FA11C41038E008B3A0E /* 转盘-73.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F921C41038E008B3A0E /* 转盘-73.png */; };
+		66C03FA21C41038E008B3A0E /* 转盘-最底.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F931C41038E008B3A0E /* 转盘-最底.png */; };
+		66C03FA31C41038E008B3A0E /* 转盘-转动高亮.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F941C41038E008B3A0E /* 转盘-转动高亮.png */; };
+		66C03FA41C41038E008B3A0E /* iPodClick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 66C03F951C41038E008B3A0E /* iPodClick.aiff */; };
+		66C03FA91C4103C1008B3A0E /* CJRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C03FA61C4103C1008B3A0E /* CJRotation.m */; };
+		66C03FAA1C4103C1008B3A0E /* CJRoundLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C03FA81C4103C1008B3A0E /* CJRoundLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		660D31F01C40FFD800CE81A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 660D31CE1C40FFD700CE81A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 660D31D51C40FFD700CE81A8;
+			remoteInfo = CJRotationDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		660D31D61C40FFD700CE81A8 /* CJRotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJRotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		660D31DA1C40FFD700CE81A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		660D31DB1C40FFD700CE81A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		660D31DD1C40FFD700CE81A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		660D31DE1C40FFD700CE81A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		660D31E01C40FFD700CE81A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		660D31E11C40FFD700CE81A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		660D31E41C40FFD700CE81A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		660D31E61C40FFD700CE81A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		660D31E91C40FFD700CE81A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		660D31EF1C40FFD800CE81A8 /* CJRotationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJRotationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		660D31F41C40FFD800CE81A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		660D31F51C40FFD800CE81A8 /* CJRotationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJRotationDemoTests.m; sourceTree = "<group>"; };
+		66C03F861C41038E008B3A0E /* 按钮.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "按钮.wav"; path = "../../CJRotation/按钮.wav"; sourceTree = "<group>"; };
+		66C03F871C41038E008B3A0E /* 得.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "得.wav"; path = "../../CJRotation/得.wav"; sourceTree = "<group>"; };
+		66C03F881C41038E008B3A0E /* 扣.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "扣.wav"; path = "../../CJRotation/扣.wav"; sourceTree = "<group>"; };
+		66C03F891C41038E008B3A0E /* 零.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "零.wav"; path = "../../CJRotation/零.wav"; sourceTree = "<group>"; };
+		66C03F8B1C41038E008B3A0E /* mmm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mmm.png; sourceTree = "<group>"; };
+		66C03F8C1C41038E008B3A0E /* 启动按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动按钮.png"; sourceTree = "<group>"; };
+		66C03F8D1C41038E008B3A0E /* 启动按钮按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动按钮按下.png"; sourceTree = "<group>"; };
+		66C03F8E1C41038E008B3A0E /* 转盘-69.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转盘-69.png"; sourceTree = "<group>"; };
+		66C03F8F1C41038E008B3A0E /* 转盘-70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转盘-70.png"; sourceTree = "<group>"; };
+		66C03F901C41038E008B3A0E /* 转盘-71.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转盘-71.png"; sourceTree = "<group>"; };
+		66C03F911C41038E008B3A0E /* 转盘-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转盘-72.png"; sourceTree = "<group>"; };
+		66C03F921C41038E008B3A0E /* 转盘-73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转盘-73.png"; sourceTree = "<group>"; };
+		66C03F931C41038E008B3A0E /* 转盘-最底.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转盘-最底.png"; sourceTree = "<group>"; };
+		66C03F941C41038E008B3A0E /* 转盘-转动高亮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转盘-转动高亮.png"; sourceTree = "<group>"; };
+		66C03F951C41038E008B3A0E /* iPodClick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = iPodClick.aiff; path = ../../CJRotation/iPodClick.aiff; sourceTree = "<group>"; };
+		66C03FA51C4103C1008B3A0E /* CJRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJRotation.h; path = ../../CJRotation/CJRotation.h; sourceTree = "<group>"; };
+		66C03FA61C4103C1008B3A0E /* CJRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJRotation.m; path = ../../CJRotation/CJRotation.m; sourceTree = "<group>"; };
+		66C03FA71C4103C1008B3A0E /* CJRoundLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJRoundLayout.h; path = ../../CJRotation/CJRoundLayout.h; sourceTree = "<group>"; };
+		66C03FA81C4103C1008B3A0E /* CJRoundLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJRoundLayout.m; path = ../../CJRotation/CJRoundLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		660D31D31C40FFD700CE81A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660D31EC1C40FFD800CE81A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		660D31CD1C40FFD700CE81A8 = {
+			isa = PBXGroup;
+			children = (
+				660D31D81C40FFD700CE81A8 /* CJRotationDemo */,
+				660D31F21C40FFD800CE81A8 /* CJRotationDemoTests */,
+				660D31D71C40FFD700CE81A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		660D31D71C40FFD700CE81A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				660D31D61C40FFD700CE81A8 /* CJRotationDemo.app */,
+				660D31EF1C40FFD800CE81A8 /* CJRotationDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		660D31D81C40FFD700CE81A8 /* CJRotationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				66C03FA51C4103C1008B3A0E /* CJRotation.h */,
+				66C03FA61C4103C1008B3A0E /* CJRotation.m */,
+				66C03FA71C4103C1008B3A0E /* CJRoundLayout.h */,
+				66C03FA81C4103C1008B3A0E /* CJRoundLayout.m */,
+				660D31DD1C40FFD700CE81A8 /* AppDelegate.h */,
+				660D31DE1C40FFD700CE81A8 /* AppDelegate.m */,
+				660D31E01C40FFD700CE81A8 /* ViewController.h */,
+				660D31E11C40FFD700CE81A8 /* ViewController.m */,
+				66C03F8A1C41038E008B3A0E /* Image */,
+				66C03F861C41038E008B3A0E /* 按钮.wav */,
+				66C03F871C41038E008B3A0E /* 得.wav */,
+				66C03F881C41038E008B3A0E /* 扣.wav */,
+				66C03F891C41038E008B3A0E /* 零.wav */,
+				66C03F951C41038E008B3A0E /* iPodClick.aiff */,
+				660D31E31C40FFD700CE81A8 /* Main.storyboard */,
+				660D31E61C40FFD700CE81A8 /* Images.xcassets */,
+				660D31E81C40FFD700CE81A8 /* LaunchScreen.xib */,
+				660D31D91C40FFD700CE81A8 /* Supporting Files */,
+			);
+			path = CJRotationDemo;
+			sourceTree = "<group>";
+		};
+		660D31D91C40FFD700CE81A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				660D31DA1C40FFD700CE81A8 /* Info.plist */,
+				660D31DB1C40FFD700CE81A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		660D31F21C40FFD800CE81A8 /* CJRotationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				660D31F51C40FFD800CE81A8 /* CJRotationDemoTests.m */,
+				660D31F31C40FFD800CE81A8 /* Supporting Files */,
+			);
+			path = CJRotationDemoTests;
+			sourceTree = "<group>";
+		};
+		660D31F31C40FFD800CE81A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				660D31F41C40FFD800CE81A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66C03F8A1C41038E008B3A0E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				66C03F8B1C41038E008B3A0E /* mmm.png */,
+				66C03F8C1C41038E008B3A0E /* 启动按钮.png */,
+				66C03F8D1C41038E008B3A0E /* 启动按钮按下.png */,
+				66C03F8E1C41038E008B3A0E /* 转盘-69.png */,
+				66C03F8F1C41038E008B3A0E /* 转盘-70.png */,
+				66C03F901C41038E008B3A0E /* 转盘-71.png */,
+				66C03F911C41038E008B3A0E /* 转盘-72.png */,
+				66C03F921C41038E008B3A0E /* 转盘-73.png */,
+				66C03F931C41038E008B3A0E /* 转盘-最底.png */,
+				66C03F941C41038E008B3A0E /* 转盘-转动高亮.png */,
+			);
+			name = Image;
+			path = ../../CJRotation/Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		660D31D51C40FFD700CE81A8 /* CJRotationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660D31F91C40FFD800CE81A8 /* Build configuration list for PBXNativeTarget "CJRotationDemo" */;
+			buildPhases = (
+				660D31D21C40FFD700CE81A8 /* Sources */,
+				660D31D31C40FFD700CE81A8 /* Frameworks */,
+				660D31D41C40FFD700CE81A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJRotationDemo;
+			productName = CJRotationDemo;
+			productReference = 660D31D61C40FFD700CE81A8 /* CJRotationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		660D31EE1C40FFD800CE81A8 /* CJRotationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660D31FC1C40FFD800CE81A8 /* Build configuration list for PBXNativeTarget "CJRotationDemoTests" */;
+			buildPhases = (
+				660D31EB1C40FFD800CE81A8 /* Sources */,
+				660D31EC1C40FFD800CE81A8 /* Frameworks */,
+				660D31ED1C40FFD800CE81A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				660D31F11C40FFD800CE81A8 /* PBXTargetDependency */,
+			);
+			name = CJRotationDemoTests;
+			productName = CJRotationDemoTests;
+			productReference = 660D31EF1C40FFD800CE81A8 /* CJRotationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		660D31CE1C40FFD700CE81A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ccj;
+				TargetAttributes = {
+					660D31D51C40FFD700CE81A8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					660D31EE1C40FFD800CE81A8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 660D31D51C40FFD700CE81A8;
+					};
+				};
+			};
+			buildConfigurationList = 660D31D11C40FFD700CE81A8 /* Build configuration list for PBXProject "CJRotationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 660D31CD1C40FFD700CE81A8;
+			productRefGroup = 660D31D71C40FFD700CE81A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				660D31D51C40FFD700CE81A8 /* CJRotationDemo */,
+				660D31EE1C40FFD800CE81A8 /* CJRotationDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		660D31D41C40FFD700CE81A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C03FA41C41038E008B3A0E /* iPodClick.aiff in Resources */,
+				66C03F9E1C41038E008B3A0E /* 转盘-70.png in Resources */,
+				66C03FA31C41038E008B3A0E /* 转盘-转动高亮.png in Resources */,
+				66C03F981C41038E008B3A0E /* 扣.wav in Resources */,
+				66C03FA21C41038E008B3A0E /* 转盘-最底.png in Resources */,
+				66C03F9A1C41038E008B3A0E /* mmm.png in Resources */,
+				66C03F9B1C41038E008B3A0E /* 启动按钮.png in Resources */,
+				66C03F9C1C41038E008B3A0E /* 启动按钮按下.png in Resources */,
+				66C03F971C41038E008B3A0E /* 得.wav in Resources */,
+				66C03F991C41038E008B3A0E /* 零.wav in Resources */,
+				660D31E51C40FFD700CE81A8 /* Main.storyboard in Resources */,
+				66C03F961C41038E008B3A0E /* 按钮.wav in Resources */,
+				66C03F9D1C41038E008B3A0E /* 转盘-69.png in Resources */,
+				66C03FA01C41038E008B3A0E /* 转盘-72.png in Resources */,
+				66C03F9F1C41038E008B3A0E /* 转盘-71.png in Resources */,
+				66C03FA11C41038E008B3A0E /* 转盘-73.png in Resources */,
+				660D31EA1C40FFD700CE81A8 /* LaunchScreen.xib in Resources */,
+				660D31E71C40FFD700CE81A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660D31ED1C40FFD800CE81A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		660D31D21C40FFD700CE81A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C03FA91C4103C1008B3A0E /* CJRotation.m in Sources */,
+				66C03FAA1C4103C1008B3A0E /* CJRoundLayout.m in Sources */,
+				660D31E21C40FFD700CE81A8 /* ViewController.m in Sources */,
+				660D31DF1C40FFD700CE81A8 /* AppDelegate.m in Sources */,
+				660D31DC1C40FFD700CE81A8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660D31EB1C40FFD800CE81A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660D31F61C40FFD800CE81A8 /* CJRotationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		660D31F11C40FFD800CE81A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 660D31D51C40FFD700CE81A8 /* CJRotationDemo */;
+			targetProxy = 660D31F01C40FFD800CE81A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		660D31E31C40FFD700CE81A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				660D31E41C40FFD700CE81A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		660D31E81C40FFD700CE81A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				660D31E91C40FFD700CE81A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		660D31F71C40FFD800CE81A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		660D31F81C40FFD800CE81A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		660D31FA1C40FFD800CE81A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CJRotationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		660D31FB1C40FFD800CE81A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CJRotationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		660D31FD1C40FFD800CE81A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CJRotationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJRotationDemo.app/CJRotationDemo";
+			};
+			name = Debug;
+		};
+		660D31FE1C40FFD800CE81A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CJRotationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJRotationDemo.app/CJRotationDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		660D31D11C40FFD700CE81A8 /* Build configuration list for PBXProject "CJRotationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660D31F71C40FFD800CE81A8 /* Debug */,
+				660D31F81C40FFD800CE81A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		660D31F91C40FFD800CE81A8 /* Build configuration list for PBXNativeTarget "CJRotationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660D31FA1C40FFD800CE81A8 /* Debug */,
+				660D31FB1C40FFD800CE81A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		660D31FC1C40FFD800CE81A8 /* Build configuration list for PBXNativeTarget "CJRotationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660D31FD1C40FFD800CE81A8 /* Debug */,
+				660D31FE1C40FFD800CE81A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 660D31CE1C40FFD700CE81A8 /* Project object */;
+}
