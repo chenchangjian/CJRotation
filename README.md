@@ -12,9 +12,9 @@
            4.1 动画停止后回调
   ```objc
    [roationView rotatingDidFinishBlock:^(NSInteger index, CGFloat score) {
- NSLog(@"indx=%ld,score=%.f",index,score);
- label.text = [NSString stringWithFormat:@"分数:%.f",score];
- }];
+     NSLog(@"indx = %ld,score = %.f",index,score);
+     label.text = [NSString stringWithFormat:@"分数: %.f",score];
+   }];
   ```
 效果如下
 
