@@ -44,7 +44,7 @@
 - (void)setTitle:(NSString *)str IndexPath:(NSIndexPath *)indexPath
 {
     self.label.text = str;
-    CGFloat angle = (-M_PI/8) + indexPath.row*M_PI/4;//根据title的数量设置角度
+    CGFloat angle = (-M_PI / 8) + indexPath.row * M_PI / 4;//根据title的数量设置角度
     self.transform = CGAffineTransformMakeRotation(angle);
 }
 @end
@@ -126,12 +126,12 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
     
     
     
-    UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(-15, -15, frame.size.width+30, frame.size.height+30)];
+    UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(-15, -15, frame.size.width + 30, frame.size.height + 30)];
     image.image = [UIImage imageNamed:@"转盘-最底"];
     [self addSubview:image];
     
     
-    UIImageView *image2 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width*3/4 - 5, frame.size.height*3/4 - 5)];
+    UIImageView *image2 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 3 / 4 - 5, frame.size.height * 3 / 4 - 5)];
     image2.image = [UIImage imageNamed:@"转盘-70"];
     image2.center = image.center;
     [self addSubview:image2];
@@ -142,7 +142,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
     [self addSubview:self.turnView];
     
     CJRoundLayout * layout = [[CJRoundLayout alloc]init];
-    self.collect  = [[UICollectionView alloc]initWithFrame:CGRectMake(-3, -3, frame.size.width+6, frame.size.height+6) collectionViewLayout:layout];
+    self.collect  = [[UICollectionView alloc]initWithFrame:CGRectMake(-3, -3, frame.size.width + 6, frame.size.height + 6) collectionViewLayout:layout];
     _collect.delegate=self;
     _collect.dataSource=self;
     _collect.backgroundColor = [UIColor clearColor];
@@ -156,7 +156,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
     [self.button setImage:[UIImage imageNamed:@"启动按钮"] forState:UIControlStateNormal];
     [self.button setImage:[UIImage imageNamed:@"启动按钮按下"] forState:UIControlStateHighlighted];
     [self.button setImage:[UIImage imageNamed:@"启动按钮按下"] forState:UIControlStateDisabled];
-    self.button.frame = CGRectMake(0, 0, frame.size.width/2, frame.size.height/2);
+    self.button.frame = CGRectMake(0, 0, frame.size.width / 2, frame.size.height / 2);
     self.button.center = image.center;
     [self addSubview:self.button];
     [self.button addTarget:self action:@selector(startRotain:) forControlEvents:UIControlEventTouchUpInside];
@@ -205,7 +205,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
     caAnimation.removedOnCompletion = NO;
     caAnimation.fillMode = kCAFillModeForwards;
     caAnimation.fromValue = @(al);
-    CGFloat flot = al + M_PI/(titleCount/2);
+    CGFloat flot = al + M_PI / (titleCount / 2);
     caAnimation.toValue = @(flot);
     caAnimation.duration = duration;
     caAnimation.repeatCount = 1;
@@ -222,7 +222,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
 }
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    if (hasRoationCount>=roationCount) {
+    if (hasRoationCount >= roationCount) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             self.button.enabled = YES;
         });
@@ -231,7 +231,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
         
         for (int i = 0; i<self.titles.count; i++) {
             CJCollectViewCell *cell = (CJCollectViewCell *)[self.collect cellForItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
-            if (i==curIndex) {
+            if (i == curIndex) {
                 cell.label.textColor = [UIColor redColor];
                 cell.label.font = [UIFont boldSystemFontOfSize:22];
                 self.turnView.highlighted = NO;
@@ -260,24 +260,24 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
     }
     
     int limit = 18;
-    if (hasRoationCount>=limit&&hasRoationCount<=roationCount-limit) {
+    if (hasRoationCount >= limit&&hasRoationCount <= roationCount - limit) {
         [self startAnimatWithView:self.turnView];
         return;
     }
-    if (hasRoationCount<limit) {
+    if (hasRoationCount < limit) {
         self.variableState = increasing;
-    }else if (hasRoationCount>roationCount-limit){
+    }else if (hasRoationCount > roationCount - limit){
         self.variableState = diminishing;
     }
-    if (self.variableState==increasing) {
-        duration-=0.01;
+    if (self.variableState == increasing) {
+        duration -= 0.01;
     }else{
-        duration+=0.01;
+        duration += 0.01;
     }
     
     
-    if (duration<0.01) {
-        duration=0.01;
+    if (duration < 0.01) {
+        duration = 0.01;
     }
     [self startAnimatWithView:self.turnView];
 }
@@ -287,7 +287,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
  */
 - (void)reSet
 {
-    for (int i = 0; i<self.titles.count; i++) {
+    for (int i = 0; i < self.titles.count; i++) {
         CJCollectViewCell *cell = (CJCollectViewCell *)[self.collect cellForItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
         cell.label.textColor = [UIColor whiteColor];
         cell.label.font = [UIFont boldSystemFontOfSize:16];
