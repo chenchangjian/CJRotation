@@ -18,4 +18,4 @@
   ```
 效果如下:
 
-![](http://a2.qpic.cn/psb?/V10YRIl50znCEn/pPUqDm2abD3JMT38E6S8clJfgyiR26tQkKIMqhPbN8M!/b/dIEBAAAAAAAA&bo=HAEMAgAAAAAC3Os!&rf=viewer_4)
+![](https://github.com/chenchangjian/CJRotation/blob/master/CJRotationDemo/CJRoation.gif?raw=true)
