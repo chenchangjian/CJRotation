@@ -163,7 +163,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
     titleCount = self.titles.count;
     
     
-    duration = 0.2f;
+    duration = 0.00001f;
     al = 0;
 }
 
@@ -193,7 +193,7 @@ typedef void(^RotationBlock)(NSInteger,CGFloat);
     roationCount = arc4random() % 145 + 64;
     NSLog(@"%d",roationCount);
     hasRoationCount = 0;
-    duration = 0.2f;
+    duration = 0.00001f;
     self.variableState = increasing;
     self.turnView.highlighted = YES;
     [self startAnimatWithView:self.turnView];

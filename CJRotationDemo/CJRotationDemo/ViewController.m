@@ -57,8 +57,8 @@
     self.rotation = rotation;
     __weak typeof(self) weak = self;
     [rotation rotatViewDidStareRotating:^{
-        weak.lab1.textColor = WhiteColor;
-        weak.lab0.textColor = WhiteColor;
+        weak.lab1.textColor = [UIColor grayColor];
+        weak.lab0.textColor = [UIColor grayColor];
     }];
     [rotation rotatingDidFinishBlock:^(NSInteger index, CGFloat score) {
         NSLog(@"indx=%ld,score=%.f",(long)index,score);
@@ -157,7 +157,7 @@
     
     lab.textAlignment = NSTextAlignmentCenter;
     lab.text = @"我的积分";
-    lab.textColor = [UIColor whiteColor];
+    lab.textColor = [UIColor grayColor];
     lab.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:lab];
     self.lab0 = lab;
@@ -165,7 +165,7 @@
     UILabel *lab1 = [[UILabel alloc] init];
     
     lab1.text = @"0000";
-    lab1.textColor = [UIColor whiteColor];
+    lab1.textColor = [UIColor grayColor];
     lab1.textAlignment = NSTextAlignmentCenter;
     lab1.font = [UIFont systemFontOfSize:12];
     self.lab1 = lab1;
