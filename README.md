@@ -16,7 +16,6 @@
      label.text = [NSString stringWithFormat:@"分数: %.f",score];
    }];
   ```
-效果如下
-
+效果如下:
 
 ![](http://r.photo.store.qq.com/psb?/V10YRIl50znCEn/W8*YTcKs8rLZIy.N5oqA44BGUOogn*HrWklQhNeW4*0!/r/dFsBAAAAAAAA)
